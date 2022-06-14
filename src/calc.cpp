@@ -51,16 +51,10 @@ int main(){
 	for (int i=0;i<n;i++){
 		for (int j=0;j<n;j++){
 			for (int k=0;k<n;k++) if (Vi[i]+Vi[j]+Vi[k]+fir==1800){
-						if (Vi[i]==131){
-							int gg=1;
-						}
 				for (rat=0;rat<99;rat++){
 					int mn=oo;
 					int mx=-oo;
 					for (int st=4001;st<5000;st++){
-						if (Vi[i]==131&&Vi[j]==464&&Vi[k]==87){
-							int gg=1;
-						}
 						B[0]=st;
 						B[1]=B[0]-fir;
 						B[2]=B[1]+450;

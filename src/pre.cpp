@@ -15,5 +15,7 @@ int main(){
 		I.push_back(v);
 	}
 	for (string s:V) printf("\"%s\",",s.c_str());
+	puts("");
 	for (int i:I) printf("%d,",i);
+	puts("");
 }
