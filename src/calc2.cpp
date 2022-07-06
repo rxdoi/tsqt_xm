@@ -53,23 +53,23 @@ int main(){
 				for (rat=0;rat<99;rat++){
 					int mn=oo;
 					int mx=-oo;
-					for (int st=4001;st<5000;st++){
+					for (int st=fir;st<5000;st++){
 						B[0]=st;
 						B[1]=B[0]-fir;
 						B[2]=B[1]+450;
 						B[3]=B[2]+450;
 						B[4]=B[3]-Vi[i];
-						B[5]=B[4]-Vi[j];
-						B[6]=B[5]+450;
+						B[5]=B[4]+450;
+						B[6]=B[5]-Vi[j];
 						B[7]=B[6]+450;
-						if (B[0]<=1.0*rat/100*mp || B[0]<=4000) continue;
+						if (B[0]<=1.0*rat/100*mp || B[0]>=4000) continue;
 						if (B[1]> 1.0*rat/100*mp || B[1]>=4000) continue;
 						if (B[2]> 1.0*rat/100*mp || B[2]>=4000) continue;
-						if (B[3]<=1.0*rat/100*mp || B[3]<=4000) continue;
-						if (B[4]<=1.0*rat/100*mp || B[4]<=4000) continue;
-						if (B[5]> 1.0*rat/100*mp || B[5]>=4000) continue;
+						if (B[3]<=1.0*rat/100*mp || B[3]>=4000) continue;
+						if (B[4]> 1.0*rat/100*mp || B[4]>=4000) continue;
+						if (B[5]<=1.0*rat/100*mp || B[5]>=4000) continue;
 						if (B[6]> 1.0*rat/100*mp || B[6]>=4000) continue;
-						if (B[7]<=1.0*rat/100*mp || B[7]<=4000) continue;
+						if (B[7]<=1.0*rat/100*mp || B[7]>=4000) continue;
 						mn=min(mn,st);
 						mx=max(mx,st);
 					}
